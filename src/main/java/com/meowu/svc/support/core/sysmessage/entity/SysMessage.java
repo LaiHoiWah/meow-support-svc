@@ -1,4 +1,4 @@
-package com.meowu.svc.support.core.message.entity;
+package com.meowu.svc.support.core.sysmessage.entity;
 
 import com.meowu.starter.data.core.entity.Creatable;
 import com.meowu.starter.data.core.entity.Deletable;
@@ -25,8 +25,11 @@ public class SysMessage implements Identity<Integer>, Creatable, Updatable, Dele
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "code", nullable = false, unique = true)
+    @Column(name = "code", nullable = false)
     private String code;
+
+    @Column(name = "language", nullable = false)
+    private String language;
 
     @Column(name = "content")
     private String content;

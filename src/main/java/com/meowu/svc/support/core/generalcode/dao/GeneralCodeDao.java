@@ -5,7 +5,6 @@ import com.meowu.svc.support.commons.constant.RecordStatus;
 import com.meowu.svc.support.core.generalcode.dao.repository.GeneralCodeRepository;
 import com.meowu.svc.support.core.generalcode.dao.repository.specification.GeneralCodeSpecification;
 import com.meowu.svc.support.core.generalcode.entity.GeneralCode;
-import com.meowu.svc.support.core.message.entity.SysMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

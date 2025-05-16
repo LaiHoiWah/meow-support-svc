@@ -1,6 +1,6 @@
-package com.meowu.svc.support.core.message.dao.repository;
+package com.meowu.svc.support.core.sysmessage.dao.repository;
 
-import com.meowu.svc.support.core.message.entity.SysMessage;
+import com.meowu.svc.support.core.sysmessage.entity.SysMessage;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

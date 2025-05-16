@@ -1,7 +1,7 @@
-package com.meowu.svc.support.core.message.dao.repository.specification;
+package com.meowu.svc.support.core.sysmessage.dao.repository.specification;
 
 import com.meowu.svc.support.commons.constant.RecordStatus;
-import com.meowu.svc.support.core.message.entity.SysMessage;
+import com.meowu.svc.support.core.sysmessage.entity.SysMessage;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 
