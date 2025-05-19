@@ -1,6 +1,6 @@
 package com.meowu.svc.support.core.sysmessage.service.impl;
 
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.entity.SysMessage;
 import com.meowu.svc.support.core.sysmessage.dto.SysMessageDto;
 import com.meowu.svc.support.core.sysmessage.dto.mapper.SysMessageMapper;

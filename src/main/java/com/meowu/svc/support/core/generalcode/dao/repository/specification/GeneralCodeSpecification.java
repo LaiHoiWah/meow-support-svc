@@ -1,6 +1,6 @@
 package com.meowu.svc.support.core.generalcode.dao.repository.specification;
 
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.generalcode.entity.GeneralCode;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;

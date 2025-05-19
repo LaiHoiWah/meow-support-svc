@@ -1,6 +1,6 @@
-package com.meowu.svc.support.commons.constant.converter.jpa;
+package com.meowu.svc.support.commons.constant.enumeration.conversion.jpa;
 
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import jakarta.persistence.AttributeConverter;
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,4 +1,4 @@
-package com.meowu.svc.support.core.sysmessage.entity;
+package com.meowu.svc.support.core.application.entity;
 
 import com.meowu.starter.data.core.entity.Creatable;
 import com.meowu.starter.data.core.entity.Deletable;
@@ -17,26 +17,35 @@ import java.util.Date;
 @Setter
 @FieldNameConstants
 @Entity
-@Table(name = "sys_message")
-public class SysMessage implements Identity<Integer>, Creatable, Updatable, Deletable{
+@Table(name = "application_workstation")
+public class ApplicationWorkstation implements Identity<Integer>, Creatable, Updatable, Deletable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "code", nullable = false)
-    private String code;
+    @Column(name = "application_name", nullable = false)
+    private String applicationName;
 
-    @Column(name = "language", nullable = false)
-    private String language;
+    @Column(name = "ip", nullable = false)
+    private String ip;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "port", nullable = false)
+    private Integer port;
+
+    @Column(name = "center_id", nullable = false)
+    private Integer centerId;
+
+    @Column(name = "worker_id", nullable = false)
+    private Integer workerId;
 
     @Column(name = "status", nullable = false)
     @Convert(converter = RecordStatusConverter.class)
     private RecordStatus status;
+
+    @Column(name = "last_system_time", nullable = false)
+    private Date lastSystemTime;
 
     @Column(name = "create_time", nullable = false)
     private Date createTime;

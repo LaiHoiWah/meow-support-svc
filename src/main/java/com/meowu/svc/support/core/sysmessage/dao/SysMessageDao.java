@@ -1,7 +1,7 @@
 package com.meowu.svc.support.core.sysmessage.dao;
 
 import com.meowu.starter.commons.utils.AssertUtils;
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.dao.repository.SysMessageRepository;
 import com.meowu.svc.support.core.sysmessage.dao.repository.specification.SysMessageSpecification;
 import com.meowu.svc.support.core.sysmessage.entity.SysMessage;

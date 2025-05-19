@@ -1,4 +1,4 @@
-package com.meowu.svc.support.core.generalcode.entity;
+package com.meowu.svc.support.core.application.entity;
 
 import com.meowu.starter.data.core.entity.*;
 import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
@@ -14,13 +14,16 @@ import java.util.Date;
 @Setter
 @FieldNameConstants
 @Entity
-@Table(name = "general_code")
-public class GeneralCode implements Identity<Integer>, Sortable, Creatable, Updatable, Deletable{
+@Table(name = "application_log_item")
+public class ApplicationLogItem implements Identity<Integer>, Sortable, Creatable, Updatable, Deletable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
+
+    @Column(name = "log_id", nullable = false)
+    private Integer logId;
 
     @Column(name = "type", nullable = false)
     private String type;
@@ -28,11 +31,8 @@ public class GeneralCode implements Identity<Integer>, Sortable, Creatable, Upda
     @Column(name = "sequence", nullable = false)
     private Integer sequence;
 
-    @Column(name = "code", nullable = false)
-    private String code;
-
-    @Column(name = "description", nullable = false)
-    private String description;
+    @Column(name = "content")
+    private String content;
 
     @Column(name = "status", nullable = false)
     @Convert(converter = RecordStatusConverter.class)

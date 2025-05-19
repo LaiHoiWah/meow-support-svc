@@ -1,13 +1,13 @@
-package com.meowu.svc.support.commons.constant.converter.gson;
+package com.meowu.svc.support.commons.constant.enumeration.conversion.gson;
 
 import com.google.gson.*;
 import com.meowu.starter.commons.utils.adapter.TypeAdapter;
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 
 import java.lang.reflect.Type;
 import java.util.Objects;
 
-public class RecordStatusTypeAdapter implements TypeAdapter<RecordStatus>{
+public class RecordStatusAdapter implements TypeAdapter<RecordStatus>{
 
     @Override
     public Class<RecordStatus> getType(){

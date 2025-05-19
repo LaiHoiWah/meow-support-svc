@@ -1,7 +1,7 @@
 package com.meowu.svc.support.core.generalcode.dao;
 
 import com.meowu.starter.commons.utils.AssertUtils;
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.generalcode.dao.repository.GeneralCodeRepository;
 import com.meowu.svc.support.core.generalcode.dao.repository.specification.GeneralCodeSpecification;
 import com.meowu.svc.support.core.generalcode.entity.GeneralCode;

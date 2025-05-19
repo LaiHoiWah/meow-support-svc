@@ -1,6 +1,6 @@
-package com.meowu.svc.support.commons.constant.converter.mvc;
+package com.meowu.svc.support.commons.constant.enumeration.conversion.mvc;
 
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.convert.converter.Converter;
 

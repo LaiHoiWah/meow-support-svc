@@ -1,11 +1,11 @@
-package com.meowu.svc.support.core.sysmessage.entity;
+package com.meowu.svc.support.core.application.entity;
 
 import com.meowu.starter.data.core.entity.Creatable;
 import com.meowu.starter.data.core.entity.Deletable;
 import com.meowu.starter.data.core.entity.Identity;
 import com.meowu.starter.data.core.entity.Updatable;
-import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
-import com.meowu.svc.support.commons.constant.enumeration.conversion.jpa.RecordStatusConverter;
+import com.meowu.svc.support.commons.constant.enumeration.VersionStatus;
+import com.meowu.svc.support.commons.constant.enumeration.conversion.jpa.VersionStatusConverter;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,26 +17,26 @@ import java.util.Date;
 @Setter
 @FieldNameConstants
 @Entity
-@Table(name = "sys_message")
-public class SysMessage implements Identity<Integer>, Creatable, Updatable, Deletable{
+@Table(name = "application_version")
+public class ApplicationVersion implements Identity<Integer>, Creatable, Updatable, Deletable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "code", nullable = false)
-    private String code;
+    @Column(name = "application_id", nullable = false)
+    private Integer applicationId;
 
-    @Column(name = "language", nullable = false)
-    private String language;
+    @Column(name = "version", nullable = false)
+    private String version;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "description")
+    private String description;
 
     @Column(name = "status", nullable = false)
-    @Convert(converter = RecordStatusConverter.class)
-    private RecordStatus status;
+    @Convert(converter = VersionStatusConverter.class)
+    private VersionStatus status;
 
     @Column(name = "create_time", nullable = false)
     private Date createTime;

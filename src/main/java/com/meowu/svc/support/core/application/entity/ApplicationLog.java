@@ -1,6 +1,9 @@
-package com.meowu.svc.support.core.generalcode.entity;
+package com.meowu.svc.support.core.application.entity;
 
-import com.meowu.starter.data.core.entity.*;
+import com.meowu.starter.data.core.entity.Creatable;
+import com.meowu.starter.data.core.entity.Deletable;
+import com.meowu.starter.data.core.entity.Identity;
+import com.meowu.starter.data.core.entity.Updatable;
 import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.commons.constant.enumeration.conversion.jpa.RecordStatusConverter;
 import jakarta.persistence.*;
@@ -14,25 +17,19 @@ import java.util.Date;
 @Setter
 @FieldNameConstants
 @Entity
-@Table(name = "general_code")
-public class GeneralCode implements Identity<Integer>, Sortable, Creatable, Updatable, Deletable{
+@Table(name = "application_log")
+public class ApplicationLog implements Identity<Integer>, Creatable, Updatable, Deletable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "type", nullable = false)
-    private String type;
+    @Column(name = "application_id", nullable = false)
+    private Integer applicationId;
 
-    @Column(name = "sequence", nullable = false)
-    private Integer sequence;
-
-    @Column(name = "code", nullable = false)
-    private String code;
-
-    @Column(name = "description", nullable = false)
-    private String description;
+    @Column(name = "version_id", nullable = false)
+    private Integer versionId;
 
     @Column(name = "status", nullable = false)
     @Convert(converter = RecordStatusConverter.class)

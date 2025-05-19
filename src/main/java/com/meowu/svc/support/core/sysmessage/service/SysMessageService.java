@@ -1,6 +1,6 @@
 package com.meowu.svc.support.core.sysmessage.service;
 
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.dto.SysMessageDto;
 
 import java.util.List;

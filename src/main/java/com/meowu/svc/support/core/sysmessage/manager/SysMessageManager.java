@@ -2,7 +2,7 @@ package com.meowu.svc.support.core.sysmessage.manager;
 
 import com.meowu.starter.commons.utils.AssertUtils;
 import com.meowu.starter.web.security.stereotype.Manager;
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.dao.SysMessageDao;
 import com.meowu.svc.support.core.sysmessage.entity.SysMessage;
 import org.springframework.beans.factory.annotation.Autowired;

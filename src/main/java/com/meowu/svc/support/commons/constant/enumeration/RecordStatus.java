@@ -1,4 +1,4 @@
-package com.meowu.svc.support.commons.constant;
+package com.meowu.svc.support.commons.constant.enumeration;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

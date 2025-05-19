@@ -1,7 +1,7 @@
 package com.meowu.svc.support.core.sysmessage.controller;
 
 import com.meowu.starter.web.security.response.Response;
-import com.meowu.svc.support.commons.constant.RecordStatus;
+import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.dto.SysMessageDto;
 import com.meowu.svc.support.core.sysmessage.service.SysMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
