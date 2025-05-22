@@ -1,6 +1,7 @@
 package com.meowu.svc.support.core.sysmessage.manager;
 
 import com.meowu.starter.commons.utils.AssertUtils;
+import com.meowu.starter.web.security.exception.DuplicationException;
 import com.meowu.starter.web.security.stereotype.Manager;
 import com.meowu.svc.support.commons.constant.enumeration.RecordStatus;
 import com.meowu.svc.support.core.sysmessage.dao.SysMessageDao;
@@ -20,6 +21,11 @@ public class SysMessageManager{
         AssertUtils.isNotBlank(message.getCode(), "System message code must not be null");
         AssertUtils.isNotBlank(message.getLanguage(), "System message language must not be null");
         AssertUtils.isNotNull(message.getStatus(), "System message status must not be null");
+
+        // duplicate code
+        if(sysMessageDao.existsByCode(message.getCode())){
+            throw new DuplicationException("System message code [" + message.getCode() + "] is exists");
+        }
 
         return sysMessageDao.save(message);
     }

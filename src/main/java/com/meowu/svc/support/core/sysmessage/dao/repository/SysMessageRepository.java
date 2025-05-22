@@ -11,4 +11,6 @@ public interface SysMessageRepository extends JpaRepository<SysMessage, Integer>
     SysMessage findOneById(Integer id);
 
     SysMessage findOneByCode(String code);
+
+    boolean existsByCode(String code);
 }

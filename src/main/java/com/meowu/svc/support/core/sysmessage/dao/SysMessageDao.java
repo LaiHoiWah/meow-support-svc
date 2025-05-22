@@ -69,4 +69,9 @@ public class SysMessageDao{
         AssertUtils.isNotBlank(code, "Search code must not be null");
         return repository.findOneByCode(code);
     }
+
+    public boolean existsByCode(String code){
+        AssertUtils.isNotBlank(code, "Search code must not be null");
+        return repository.existsByCode(code);
+    }
 }

@@ -30,6 +30,13 @@ spring:
     hibernate:
         ddl-auto: create
 
+# cache
+cache:
+  caffeine:
+    maximum-size: 100
+    expireAfterWrit: 60
+
+# meowu
 meowu:
   web:
     cors:
